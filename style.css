@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+}
+.container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    background-image: url("assets/bg1.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #f5f5f5;
+}
+.card {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    min-height: 600px;
+    width: 450px;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 0 50px #d3d3d3;
+    display: flex;
+}
+
+.profile {
+    border-radius: 20px;
+}
+.name {
+    margin: 10px;
+
+    font-weight: bold;
+    font-size: 30px;
+    color: #2f4f4f;
+    font-family: 'BioRhyme', serif;
+}
+.profile-links {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+@media screen and (min-width: 500px) and (max-width: 600px) {
+    .card {
+        width: 400px;
+    }
+}
+@media screen and (min-width: 400px) and (max-width: 500px) {
+    .card {
+        width: 380px
+    }
+}
+@media screen and (min-width: 200px) and (max-width: 400px) {
+    .card {
+        width: 330px;
+        min-height: 550px
+    }
+
+    .profile{
+        width: 250px
+    }
+
+    .name {
+        font-size: 30px
+    }
+
+    .title {
+        font-size: 25px
+    }
+}
+.profile {
+    width: 300px;
+}
+
+@keyframes cardAnimate {
+    0% {
+        transform: scale(.2)
+    }
+    to {
+        transform: scale(1)
+    }
+}
+
+
+
+
