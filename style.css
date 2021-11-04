@@ -34,10 +34,10 @@
 
 .profile {
     border-radius: 20px;
+    width: 300px;
 }
 .name {
     margin: 10px;
-
     font-weight: bold;
     font-size: 30px;
     color: #2f4f4f;
@@ -51,48 +51,61 @@
     justify-content: space-around;
     align-items: center;
 }
-
-@media screen and (min-width: 500px) and (max-width: 600px) {
+.s1 {
+    height: 50px;
+}
+@media screen and (max-width: 480px) {
     .card {
-        width: 400px;
+        min-height: 500px;
+        width: 300px;
+    }
+    .profile {
+        height: 290px;
+        width: 250px;
     }
 }
-@media screen and (min-width: 400px) and (max-width: 500px) {
+@media screen and (max-width: 1081px) and (min-width: 1070px){
     .card {
-        width: 380px
+        min-height: 1600px;
+        width: 900px;
+        border-radius: 70px;
     }
-}
-@media screen and (min-width: 200px) and (max-width: 400px) {
-    .card {
-        width: 330px;
-        min-height: 550px
+    .profile {
+        height: 1200px;
+        width: 800px;
+        border-radius: 70px;
     }
-
-    .profile{
-        width: 250px
-    }
-
     .name {
-        font-size: 30px
+        font-size: 90px;
     }
-
-    .title {
-        font-size: 25px
-    }
-}
-.profile {
-    width: 300px;
-}
-
-@keyframes cardAnimate {
-    0% {
-        transform: scale(.2)
-    }
-    to {
-        transform: scale(1)
+    .s1 {
+        width: 120px;
+        height: 120px;
     }
 }
+@media screen and (min-width: 1020px) and (max-width: 1025px) {
+    .card {
+        min-height: 900px;
+        width: 600px;
+    }
+    .profile {
+        height: 600px;
+        width: 500px;
+    }
+    .name {
+        font-size: 70px;
+    }
+    .s1 {
+        height: 100px;
+        width: 100px;
+    }
+}
+@media screen and (max-width: 281px) and (min-width: 270px) {
+    .card {
+        width: 250px;
+    }
+    .profile {
+        width: 230px;
+    }
 
-
-
-
+}
