@@ -23,12 +23,16 @@
     align-items: center;
 }
 
+._blank:hover {
+    transform: scale(1.5);
+}
 .card {
     min-height: 600px;
     width: 450px;
     background-color: #fff;
     border-radius: 20px;
-    box-shadow: 0 0 50px #d3d3d3;
+    box-shadow: 0 0 70px #d3d3d3;
+
     display: flex;
 }
 
