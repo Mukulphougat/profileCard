@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap');
+
 * {
     margin: 0;
 }
@@ -10,6 +12,8 @@
     min-height: 100vh;
     width: 100%;
     display: flex;
+    flex-direction: row;
+    gap: 80px;
     background-image: url("assets/bg1.jpg");
     background-position: center center;
     background-repeat: no-repeat;
@@ -17,22 +21,25 @@
     background-size: cover;
     background-color: #f5f5f5;
 }
-.card {
+.card, .study {
     flex-direction: column;
-    justify-content: center;
+    /*justify-content: center;*/
     align-items: center;
 }
-
+.head {
+    margin-top: 10px;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 2rem;
+}
 ._blank:hover {
     transform: scale(1.5);
 }
-.card {
+.card, .study {
     min-height: 600px;
     width: 450px;
     background-color: #fff;
     border-radius: 20px;
     box-shadow: 0 0 70px #d3d3d3;
-
     display: flex;
 }
 
@@ -55,12 +62,25 @@
     justify-content: space-around;
     align-items: center;
 }
+.acd {
+    font-weight: lighter;
+    font-family: 'Roboto Mono', monospace;
+    margin: 5px;
+}
+.point {
+    font-weight: bold;
+    font-family: 'Roboto Mono', monospace;
+}
 .s1 {
     height: 50px;
 }
 /* media queries */
 @media screen and (max-width: 480px) {
-    .card {
+    .container {
+        flex-direction: column;
+        gap: 40px;
+    }
+    .card, .study {
         min-height: 500px;
         width: 300px;
     }
@@ -70,7 +90,11 @@
     }
 }
 @media screen and (max-width: 1081px) and (min-width: 1070px){
-    .card {
+    .container {
+        flex-direction: column;
+        gap: 40px;
+    }
+    .card, .study {
         min-height: 1600px;
         width: 900px;
         border-radius: 70px;
@@ -90,7 +114,11 @@
 }
 
 @media screen and (min-width: 1020px) and (max-width: 1025px) {
-    .card {
+    .container {
+        flex-direction: column;
+        gap: 40px;
+    }
+    .card, .study {
         min-height: 900px;
         width: 600px;
     }
@@ -107,7 +135,11 @@
     }
 }
 @media screen and (max-width: 281px) and (min-width: 270px) {
-    .card {
+    .container {
+        flex-direction: column;
+        gap: 40px;
+    }
+    .card, .study {
         width: 250px;
     }
     .profile {
